@@ -26,7 +26,7 @@ public class CustomerController {
 
     // REACTIVE
     @GetMapping(value = "/getAllCustomers/reactive",produces = MediaType.TEXT_EVENT_STREAM_VALUE)
-    public Flux<Customer> igetAllCustomersReactive() {
+    public Flux<Customer> getAllCustomersReactive() {
         return service.loadCustomersReactive();
     }
 }
