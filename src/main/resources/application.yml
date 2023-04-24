@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      database: CodeFirst
+      host: localhost
+      port: 27017
+      web: DEBUG
+---
+server:
+  port: 8080
